@@ -1,0 +1,24 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "this is the first poc of using testcafe tool ",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "eslint-config-crowdanalyzer": "^2.0.0"
+  },
+  "scripts": {
+    "test": "node ./testcafe.config.js",
+    "lint": "eslint . --ext .js --ext .ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "no"
+  },
+  "keywords": [
+    "no"
+  ],
+  "author": "pollet",
+  "license": "ISC"
+}
