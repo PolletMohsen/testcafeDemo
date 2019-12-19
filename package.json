@@ -6,7 +6,8 @@
   "dependencies": {},
   "devDependencies": {
     "eslint": "^6.7.2",
-    "eslint-config-crowdanalyzer": "^2.0.0"
+    "eslint-config-crowdanalyzer": "^2.0.0",
+    "testcafe": "^1.7.0"
   },
   "scripts": {
     "test": "node ./testcafe.config.js",

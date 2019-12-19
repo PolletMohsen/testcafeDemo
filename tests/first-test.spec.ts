@@ -1,6 +1,7 @@
 import ('testcafe');
 import {admin} from '../Helpers/roles';
 import {historicalModel} from '../pages/historical-models'
+import {dashboardmodel} from '../pages/dashboard-models'
 
 
    /* fixture('Landing page - Header').page('http://google.com')
@@ -15,14 +16,13 @@ import {historicalModel} from '../pages/historical-models'
 
     fixture('Login')
          test('should be able to login', async t => {
-        await t.useRole(admin);
-        // await loginModel.login('pollet.mohsen@crowdanalyzer.com','Abcd@123');
-        //  //t.wait(10000);
-        //  await t.navigateTo
-        //  ('https://app.crowdanalyzer.com/5b096dd1c0db1b152d65ca09#!/historicalV2');
+         await t.useRole(admin);
+         
+         await t.navigateTo
+          ('https://app.crowdanalyzer.com/5b096dd1c0db1b152d65ca09#!/historicalV2');
         //  //t.wait(1000);
-        // //  await dashboardmodel.chooseFirstDashboard();
-        //  await historicalModel.dowork();
+         await t.setPageLoadTimeout(500);
+          await historicalModel.dowork();
     });
 
     /*test('should redirect to first dashboard', async t => {

@@ -18,12 +18,23 @@ class HistoricalPage {
 
     async dowork(){
         //wait for page to load 
-        const nameInputElement = await this.fromDatePicker.with({ visibilityCheck: true })();
+
+
+        const elementByName =
+           Selector(name => document.querySelector('[data-testid=from-date-input]'),
+            {visibilityCheck: true});
+          t.click(elementByName);
+
         await t.wait(9000);
+        const nameInputElement = await this.runqueryButton.with({ visibilityCheck: true })();
+        //const nameInputElement = await this.fromDatePicker.with({ visibilityCheck: true })();
+        const fromdatePickerExitance = await this.runqueryButton.exists;
+        console.log(fromdatePickerExitance);
+        
        // await t.click(this.fromDatePicker);
-        await t.typeText(this.fromDatePicker,'Dec 04,2019 - 12:00 AM');
+       // await t.typeText(this.fromDatePicker,'Dec 04,2019 - 12:00 AM');
         //await t.click(this.toDatePicker);
-       // await t.click(this.runqueryButton);
+        await t.click(this.runqueryButton);
     }
 }
 
