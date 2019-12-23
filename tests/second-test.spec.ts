@@ -1,13 +1,13 @@
-import ('testcafe');
+ import ('testcafe');
  import {gmailmodel} from '../pages/gmail-models'
  import {landingPage} from '../pages/landing-notify-models'
-// import { ClientFunction } from 'testcafe';
-// import {menuModel} from './menu.models'
+ import {sourcepageModel} from '../pages/select-sources-models'
+
 
     fixture('login to gmail');
     test('should connect with email',async t=> {
-      //  await t.navigateTo('https://staging.app.notify.ly/');
-      //  await landingPage.getMagicLink();
+       await t.navigateTo('https://staging.app.notify.ly/');
+       await landingPage.getMagicLink();
     });
 
     test('login to app', async t => {
@@ -17,8 +17,4 @@ import ('testcafe');
       // await gmailmodel.getMailSubject();
        });
 
-   /* fixture ('choose music').page('https://demoqa.com/menu/');
-    test('should select music', async t=>{
-       //  await menuModel.chooseMusic();
-    })*/
     

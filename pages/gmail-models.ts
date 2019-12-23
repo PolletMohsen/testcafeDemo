@@ -24,13 +24,12 @@ class email{
          await  t.wait(900);
          //zF
          await  t.click(() => document.getElementsByClassName('yP')[1]);
-         
          await t.wait(900);
          let x =ClientFunction(() =>
-             document.getElementsByClassName('m_8799246983569157982container')[1]
-             .getElementsByTagName('a')[1]);
+             document.getElementsByClassName('m_6196007734776176597columns')[1]
+             .textContent);
              let y =ClientFunction(() =>
-             document.getElementsByClassName('m_8799246983569157982container')[1]
+             document.getElementsByClassName('m_6196007734776176597columns')[1]
              .innerHTML);
           await console.log('xxxxxxxx',x);
           await console.log('chrildreeennn',y);

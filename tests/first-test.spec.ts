@@ -6,8 +6,8 @@ import {dashboardmodel} from '../pages/dashboard-models'
 
    /* fixture('Landing page - Header').page('http://google.com')
        .before(async t => {
-           t.userEmail = 'pollet.mohsen@crowdanalyzer.com'
-           t.password = 'Abcd@123';
+           t.userEmail = 'pollet.test@gmail.com'
+           t.password = '********';
        })
        .beforeEach(async ctx => {console.log('fixture 1- before each')})
 
@@ -21,7 +21,7 @@ import {dashboardmodel} from '../pages/dashboard-models'
          await t.navigateTo
           ('https://app.crowdanalyzer.com/5b096dd1c0db1b152d65ca09#!/historicalV2');
         //  //t.wait(1000);
-         await t.setPageLoadTimeout(500);
+         
           await historicalModel.dowork();
     });
 
