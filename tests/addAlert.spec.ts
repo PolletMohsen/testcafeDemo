@@ -13,5 +13,5 @@ test('should click on add new alert button', async t=>{
     await addAlertPage.addKeyword('uber','uberEats','uberPlay');
     await sourcepageModel.chooseResource();
     await notificationchannelsPage.chooseNotifyByEmail();
-   // await sourcepageModel.authenticateTwitter('pollet_22@yahoo.com','Abcd@123');
+   // await sourcepageModel.authenticateTwitter('pollet_22@yahoo.com','*******');
 })
