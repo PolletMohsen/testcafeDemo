@@ -1,7 +1,7 @@
 import { Selector ,t} from 'testcafe';
 
 class addNewAlert{
-    addBtn: Selector = Selector('button')
+    addBtn : Selector = Selector('button')
     .withAttribute('data-testid','create-monitor-btn');
 
     addkeywordBtn: Selector = Selector('button')

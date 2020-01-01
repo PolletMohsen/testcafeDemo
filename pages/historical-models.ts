@@ -18,12 +18,10 @@ class HistoricalPage {
 
     async dowork(){
         //wait for page to load 
-
-
         const elementByName =
            Selector(name => document.querySelector('[data-testid=from-date-input]'),
             {visibilityCheck: true});
-          t.click(elementByName);
+           t.click(elementByName);
 
         await t.wait(9000);
         const nameInputElement = await this.runqueryButton.with({ visibilityCheck: true })();
